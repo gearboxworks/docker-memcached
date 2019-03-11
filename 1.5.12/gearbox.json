@@ -1,0 +1,16 @@
+{
+	"state": "production",
+	"organization": "gearboxworks",
+	"name": "memcached",
+	"version": "1.5.12",
+	"majorversion": "1.5",
+	"latest": "",
+	"class": "system",
+	"network": "--network gearboxnet",
+	"ports": "-p 11211:11211",
+	"volumes": "",
+	"restart": "--restart no",
+	"args": "",
+	"env": "MEMCACHED_VERSION"
+}
+
