@@ -1,3 +1,5 @@
+![release](https://github.com/gearboxworks/docker-memcached/workflows/release/badge.svg?event=release)
+
 ![memcached 1.5.x](https://img.shields.io/badge/memcached-1.5.x-green.svg)
 
 ![Gearbox](https://github.com/gearboxworks/gearbox.github.io/raw/master/Gearbox-100x.png)
