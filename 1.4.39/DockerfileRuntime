@@ -2,15 +2,15 @@
 ################################################################################
 # WARNING: This file has been auto-generated. DO NOT EDIT: WARNING
 # Created on 2020-03-17T16:17:22+1100, using template:DockerfileRuntime.tmpl and json:gearbox.json
-# Referenced Docker container for docker-memcached based off gearboxworks/gearbox-base:alpine-3.11 with memcached:1.5.22-alpine overlayed.
+# Referenced Docker container for docker-memcached based off gearboxworks/gearbox-base:alpine-3.11 with memcached:1.4.39-alpine overlayed.
 
-ARG VERSION=1.5.22
+ARG VERSION=1.4.39
 
 # 1. First reference the gearbox-base image.
 FROM gearboxworks/gearbox-base:alpine-3.11 as gearbox-base
 
 # 2. Next reference the third party image.
-FROM memcached:1.5.22-alpine
+FROM memcached:1.4.39-alpine
 ARG VERSION
 ARG GEARBOX_ENTRYPOINT
 ARG GEARBOX_ENTRYPOINT_ARGS
@@ -26,8 +26,8 @@ ENV GEARBOX_CONTAINER_VERSION ${VERSION}
 ENV GEARBOX_ENTRYPOINT ${GEARBOX_ENTRYPOINT}
 ENV GEARBOX_ENTRYPOINT_ARGS ${GEARBOX_ENTRYPOINT_ARGS}
 LABEL gearbox.json='{"state": "production","organization": "gearboxworks","name": "memcached","maintainer": "Gearbox Team <team@gearbox.works>","class": "system","network": "--network gearboxnet","ports": ["11211"],"volumes": "","restart": "--restart no","run": "","args": "memcached --user=gearbox","env": {"COMPOSER_USER": "gearbox"},"refurl": "https://getcomposer.org/","versions": {                "1.4.39": {                        "majorversion": "1.4",                        "latest": false,                        "ref": "memcached:1.4.39-alpine",                        "base": "gearboxworks/gearbox-base:alpine-3.11"                },                "1.5.22": {                        "majorversion": "1.5",                        "latest": false,                        "ref": "memcached:1.5.22-alpine",                        "base": "gearboxworks/gearbox-base:alpine-3.11"                },                "1.6.0": {                        "majorversion": "1.6",                        "latest": true,                        "ref": "memcached:1.6.0-alpine",                        "base": "gearboxworks/gearbox-base:alpine-3.11"}}}'
-LABEL gearbox.version='1.5.22'
-ENV GEARBOX_VERSION "1.5.22"
+LABEL gearbox.version='1.4.39'
+ENV GEARBOX_VERSION "1.4.39"
 LABEL container.args="memcached --user=gearbox"
 ENV GEARBOX_ARGS "memcached --user=gearbox"
 LABEL container.class="system"
@@ -58,10 +58,10 @@ LABEL container.base="gearboxworks/gearbox-base:alpine-3.11"
 ENV GEARBOX_BASE "gearboxworks/gearbox-base:alpine-3.11"
 LABEL container.latest="false"
 ENV GEARBOX_LATEST "false"
-LABEL container.majorversion="1.5"
-ENV GEARBOX_MAJORVERSION "1.5"
-LABEL container.ref="memcached:1.5.22-alpine"
-ENV GEARBOX_REF "memcached:1.5.22-alpine"
+LABEL container.majorversion="1.4"
+ENV GEARBOX_MAJORVERSION "1.4"
+LABEL container.ref="memcached:1.4.39-alpine"
+ENV GEARBOX_REF "memcached:1.4.39-alpine"
 ENV COMPOSER_USER "gearbox"
 
 # 5. Now copy the local files specific to this container.

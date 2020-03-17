@@ -10,16 +10,16 @@
 	],
 	"volumes": "",
 	"restart": "--restart no",
-	"run": "",
-	"args": "memcached --user=gearbox",
+	"run": "memcached",
+	"args": "",
 	"env": {
 		"COMPOSER_USER": "gearbox"
 	},
 	"refurl": "https://getcomposer.org/",
 	"versions": {
-                "1.4.39": {
-                        "majorversion": "1.4",
-                        "latest": false,
+                "1.6.0": {
+                        "majorversion": "1.6",
+                        "latest": true,
                         "ref": "memcached:1.4.39-alpine",
                         "base": "gearboxworks/gearbox-base:alpine-3.11"
                 },
@@ -31,7 +31,7 @@
                 },
                 "1.6.0": {
                         "majorversion": "1.6",
-                        "latest": true,
+                        "latest": false,
                         "ref": "memcached:1.6.0-alpine",
                         "base": "gearboxworks/gearbox-base:alpine-3.11"
 		}
