@@ -1,39 +1,54 @@
 {
-	"state": "production",
-	"organization": "gearboxworks",
-	"name": "memcached",
-	"maintainer": "Gearbox Team <team@gearbox.works>",
-	"class": "system",
-	"network": "--network gearboxnet",
-	"ports": [
-		"11211"
-	],
-	"volumes": "",
-	"restart": "--restart no",
-	"run": "",
-	"args": "memcached --user=gearbox",
-	"env": {
-		"COMPOSER_USER": "gearbox"
+	"schema": "gear-1",
+	"meta": {
+		"state": "production",
+		"organization": "gearboxworks",
+		"name": "memcached",
+		"label": "Memcached",
+		"maintainer": "Gearbox Team <team@gearbox.works>",
+		"class": "system",
+		"refurl": "https://getcomposer.org/"
 	},
-	"refurl": "https://getcomposer.org/",
+	"build": {
+		"ports": {
+
+			"memcache": "11211"
+		},
+		"run": "",
+		"args": "memcached --user=gearbox",
+		"env": {
+
+			"COMPOSER_USER": "gearbox"
+		},
+		"network": "--network gearboxnet",
+		"volumes": "",
+		"restart": "--restart no"
+	},
+	"run": {
+	},
+	"project": {
+	},
+	"extensions": {
+	},
 	"versions": {
-                "1.4.39": {
-                        "majorversion": "1.4",
-                        "latest": false,
-                        "ref": "memcached:1.4.39-alpine",
-                        "base": "gearboxworks/gearbox-base:alpine-3.11"
-                },
-                "1.5.22": {
-                        "majorversion": "1.5",
-                        "latest": false,
-                        "ref": "memcached:1.5.22-alpine",
-                        "base": "gearboxworks/gearbox-base:alpine-3.11"
-                },
-                "1.6.0": {
-                        "majorversion": "1.6",
-                        "latest": true,
-                        "ref": "memcached:1.6.0-alpine",
-                        "base": "gearboxworks/gearbox-base:alpine-3.11"
-		}
+		"1.4.39": {
+			"majorversion": "1.4",
+			"latest": false,
+			"ref": "memcached:1.4.39-alpine",
+			"base": "gearboxworks/gearbox-base:alpine-3.6"
+		},
+		"1.5.22": {
+			"majorversion": "1.5",
+			"latest": false,
+			"ref": "memcached:1.5.22-alpine",
+			"base": "gearboxworks/gearbox-base:alpine-3.11"
+		},
+		"1.6.0": {
+			"majorversion": "1.6",
+			"latest": true,
+			"ref": "memcached:1.6.0-alpine",
+			"base": "gearboxworks/gearbox-base:alpine-3.11"
+		},
+		"": {}
 	}
 }
