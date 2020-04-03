@@ -1,4 +1,4 @@
-![Gearbox](https://raw.githubusercontent.com/gearboxworks/gearboxworks.github.io/master/assets/images/gearbox-logo.png)
+![Gearbox](https://gearboxworks.github.io/assets/images/gearbox-logo.png)
 
 
 # memcached Docker container service for [Gearbox](https://github.com/gearboxworks/)
@@ -67,9 +67,9 @@ Create, and start the memcached Gearbox container. Run a shell.
 
 `./bin/gb-launch -gb-name memcached -gb-shell`
 
-Create, and start the memcached Gearbox container with version 1.4.39 and run a shell.
+Create, and start the memcached Gearbox container with version  and run a shell.
 
-`./bin/gb-launch -gb-name memcached -gb-version 1.4.39 -gb-shell`
+`./bin/gb-launch -gb-name memcached -gb-version  -gb-shell`
 
 If memcached is symlinked to `gb-launch`, then you can drop the `-gb-name` flag.
 
@@ -79,18 +79,18 @@ Running memcached Gearbox container default command. If a container has a defaul
 
 `./bin/memcached -flag1 -flag2 variable`
 
-`./bin/gb-launch -gb-name memcached -gb-version 1.4.39 -flag1 -flag2 variable`
+`./bin/gb-launch -gb-name memcached -gb-version  -flag1 -flag2 variable`
 
 
 Running alternate commands within the memcached Gearbox container.
 
 `./bin/memcached -gb-shell -- ls -l`
 
-`./bin/gb-launch -gb-name memcached -gb-version 1.4.39 -gb-shell -- ls -l`
+`./bin/gb-launch -gb-name memcached -gb-version  -gb-shell -- ls -l`
 
 `./bin/memcached -gb-shell -- ps -eaf`
 
-`./bin/gb-launch -gb-name memcached -gb-version 1.4.39 -gb-shell -- ps -eaf`
+`./bin/gb-launch -gb-name memcached -gb-version  -gb-shell -- ps -eaf`
 
 
 ssh - All [Gearbox](https://github.com/gearboxworks/) containers have a running SSH daemon. So you can connect remotely.
