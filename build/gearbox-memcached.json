@@ -7,7 +7,7 @@
 		"label": "Memcached",
 		"maintainer": "Gearbox Team <team@gearbox.works>",
 		"class": "system",
-		"refurl": "https://getcomposer.org/"
+		"refurl": "https://memcached.org/"
 	},
 	"build": {
 		"ports": {
@@ -43,12 +43,11 @@
 			"ref": "memcached:1.5.22-alpine",
 			"base": "gearboxworks/gearbox-base:alpine-3.11"
 		},
-		"1.6.0": {
+		"1.6.5": {
 			"majorversion": "1.6",
 			"latest": true,
-			"ref": "memcached:1.6.0-alpine",
+			"ref": "memcached:1.6.5-alpine",
 			"base": "gearboxworks/gearbox-base:alpine-3.11"
-		},
-		"": {}
+		}
 	}
 }
