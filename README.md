@@ -92,6 +92,7 @@ Running memcached Gearbox container default command. If a container has a defaul
 `./launch memcached:1.4.39 -flag1 -flag2 variable`
 
 Gearbox containers may have multiple executables that can be run. The memcached Gearbox container has the following available commands:
+- The default command will execute `` within the container.
 
 
 ### Remote connection

@@ -1,7 +1,7 @@
 
 ################################################################################
 # WARNING: This file has been auto-generated. DO NOT EDIT: WARNING
-# Created on 2020-05-06T20:31:15+1000, using template:DockerfileRuntime.tmpl and json:gearbox.json
+# Created on 2020-05-07T15:17:08+1000, using template:DockerfileRuntime.tmpl and json:gearbox.json
 # Referenced Docker container for docker-memcached based off gearboxworks/gearbox-base:alpine-3.11 with memcached:1.5.22-alpine overlayed.
 
 ARG VERSION=1.5.22
@@ -25,7 +25,7 @@ ENV GEARBOX_CONTAINER_NAME "docker-memcached"
 ENV GEARBOX_CONTAINER_VERSION ${VERSION}
 ENV GEARBOX_ENTRYPOINT ${GEARBOX_ENTRYPOINT}
 ENV GEARBOX_ENTRYPOINT_ARGS ${GEARBOX_ENTRYPOINT_ARGS}
-LABEL gearbox.json='{"schema": "gear-1","meta": {"state": "production","organization": "gearboxworks","name": "memcached","label": "Memcached","maintainer": "Gearbox Team <team@gearbox.works>","class": "system","refurl": "https://memcached.org/"},"build": {"ports": {"memcache": "11211"},"run": "","args": "memcached --user=gearbox","env": {"COMPOSER_USER": "gearbox"},"network": "--network gearboxnet","volumes": "","restart": "--restart no"},"run": {},"project": {},"extensions": {},"versions": {"1.4.39": {"majorversion": "1.4","latest": false,"ref": "memcached:1.4.39-alpine","base": "gearboxworks/gearbox-base:alpine-3.6"},"1.5.22": {"majorversion": "1.5","latest": false,"ref": "memcached:1.5.22-alpine","base": "gearboxworks/gearbox-base:alpine-3.11"},"1.6.5": {"majorversion": "1.6","latest": true,"ref": "memcached:1.6.5-alpine","base": "gearboxworks/gearbox-base:alpine-3.11"}}}'
+LABEL gearbox.json='{"schema": "gear-1","meta": {"state": "production","organization": "gearboxworks","name": "memcached","label": "Memcached","maintainer": "Gearbox Team <team@gearbox.works>","class": "system","refurl": "https://memcached.org/"},"build": {"ports": {"memcache": "11211"},"run": "","args": "memcached --user=gearbox","env": {"COMPOSER_USER": "gearbox"},"network": "--network gearboxnet","volumes": "","restart": "--restart no"},"run": {"commands": {"default": ""}},"project": {},"extensions": {},"versions": {"1.4.39": {"majorversion": "1.4","latest": false,"ref": "memcached:1.4.39-alpine","base": "gearboxworks/gearbox-base:alpine-3.6"},"1.5.22": {"majorversion": "1.5","latest": false,"ref": "memcached:1.5.22-alpine","base": "gearboxworks/gearbox-base:alpine-3.11"},"1.6.5": {"majorversion": "1.6","latest": true,"ref": "memcached:1.6.5-alpine","base": "gearboxworks/gearbox-base:alpine-3.11"}}}'
 LABEL gearbox.version='1.5.22'
 ENV GEARBOX_VERSION "1.5.22"
 LABEL container.class="system"

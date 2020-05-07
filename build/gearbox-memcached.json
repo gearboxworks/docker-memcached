@@ -25,6 +25,9 @@
 		"restart": "--restart no"
 	},
 	"run": {
+		"commands": {
+			"default": ""
+		}
 	},
 	"project": {
 	},
